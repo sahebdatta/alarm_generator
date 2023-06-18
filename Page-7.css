@@ -1,0 +1,79 @@
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.u-section-1 .u-sheet-1 {
+    min-height: 80px;
+  }.u-block-75e7-2 {
+    position: absolute;
+    bottom: 10px;
+  }
+  
+  .u-block-75e7-3 {
+    position: absolute;
+    left: 0;
+  }
+  
+  .u-block-75e7-4 {
+    position: absolute;
+    right: 0;
+  }
+  
+   .u-section-2-1 {
+    background-image: url("asset/ADI_OtoSense-scaled.jpg");
+    background-position: 50% 50%;
+  }
+  
+  .u-section-2-1 .u-sheet-1 {
+    min-height: 800px;
+  }
+  
+  .u-section-2-1 .u-btn-1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    margin: 734px auto 22px;
+    padding: 11px 50px 11px 49px;
+  }
+  
+  @media (max-width: 1199px) {
+    .u-section-2-1 .u-sheet-1 {
+      min-height: 660px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .u-section-2-1 .u-sheet-1 {
+      min-height: 506px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .u-section-2-1 .u-sheet-1 {
+      min-height: 380px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .u-section-2-1 .u-sheet-1 {
+      min-height: 239px;
+    }
+  }
