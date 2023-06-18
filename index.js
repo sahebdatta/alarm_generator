@@ -33,13 +33,13 @@ function updateDate() {
     "December",
   ];
   const dayWeek = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat",
   ];
   // value -> ID of the html element
   const IDCollection = ["day", "daynum", "month", "year"];
