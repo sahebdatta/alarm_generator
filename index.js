@@ -1,4 +1,6 @@
 const displayTime = document.getElementById("time");
+const alarmMessages = ["This is sample Alarm 1", "This is sample Alarm 2", "This is sample Alarm 3", "This is sample Alarm 4", "This is sample Alarm 5",
+"This is sample Alarm 6", "This is sample Alarm 7", "This is sample Alarm 8", "This is sample Alarm 9", "This is sample Alarm 10",]
 // Time
 function showTime() {
   let time = new Date();
@@ -54,4 +56,5 @@ updateDate();
 
 function myFunction() {
     document.getElementById("alarm-banner").style.display = "block";
+    document.getElementById("message").innerHTML = `<strong>Danger!</strong> ${alarmMessages[Math.floor(Math.random()*(alarmMessages.length))]} !`
 }
