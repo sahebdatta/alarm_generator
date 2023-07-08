@@ -1,6 +1,6 @@
 const displayTime = document.getElementById("time");
-const alarmMessages = ["Y axis following error", "Z direction limit exceeded", "Axis not homed", "Motor overheating", "Motor current limit exceeded",
-"DC-bus error"]
+const alarmMessages = ["TransformationError", "Z_PathLimitPositiveExceeded", "FollowingError2", "AxesGroupInErrorStop", "AxesGroupNotHomed"]
+const alarmCodes = [21004, 17039, 20503, 21222, 21258]
 // Time
 function showTime() {
   let time = new Date();
@@ -55,6 +55,8 @@ function updateDate() {
 updateDate();
 
 function myFunction() {
-    document.getElementById("alarm-banner").style.display = "block";
-    document.getElementById("message").innerHTML = `<strong>Danger!</strong> ${alarmMessages[Math.floor(Math.random()*(alarmMessages.length))]} !`
+  let randomCode = Math.floor(Math.random()*(alarmMessages.length))
+  let time = new Date();
+  document.getElementById("alarm-banner").style.display = "block";
+  document.getElementById("message").innerHTML = `<strong>Alarm | </strong> ${time.toLocaleTimeString("en-US", { hour12: false })} | ${alarmCodes[randomCode]} | ${alarmMessages[randomCode]} !`
 }
